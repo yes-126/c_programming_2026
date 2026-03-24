@@ -57,7 +57,7 @@ int main() {
         ai = rand() % 3 + 1; // 상대방(AI) 랜덤 결정
         
         printf(" \n 나: %s", rsp[user]);
-        printf("  철수: %s\n\n", rsp[ai]);
+        printf("  철수: %s\n", rsp[ai]);
 
         if (user == ai) { // 비긴 경우 
             printf("  => 비겼습니다! 재경기!\n\n");
@@ -100,7 +100,7 @@ int main() {
         ai = rand() % 3 + 1; // 상대방(AI) 랜덤 결정
         
         printf(" \n 나: %s", rsp[user]);
-        printf("  %s: %s\n\n", semiFinalist1, rsp[ai]);
+        printf("  %s: %s\n", semiFinalist1, rsp[ai]);
 
         if (user == ai) { // 비긴 경우 
             printf("  => 비겼습니다! 재경기!\n\n");
@@ -139,7 +139,7 @@ int main() {
         ai = rand() % 3 + 1; // 상대방(AI) 랜덤 결정
         
         printf(" \n 나: %s", rsp[user]);
-        printf("  %s: %s\n\n", finalist2, rsp[ai]);
+        printf("  %s: %s\n", finalist2, rsp[ai]);
 
         if (user == ai) { // 비긴 경우 
             printf("  => 비겼습니다! 재경기!\n\n");
