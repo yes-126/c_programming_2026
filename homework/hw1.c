@@ -10,11 +10,11 @@ int main() {
     srand((unsigned int)time(NULL));
 
     // 가위바위보 및 선수 명단 배열
-    const char* rsp[] = {"", "가위", "바위", "보"}; // 1부터 사용
-    const char* names[] = {"플레이어", "철수", "영희", "민준", "지아", "현우", "수빈", "태양"};
+    const char* rsp[] = {"", "가위", "바위", "보"}; // 1부터 사용하기에 인덱스 0은 빈 문자열로 둠
+    const char* names[] = {"플레이어", "민규", "지수", "민준", "지아", "현우", "수빈", "태양"};
     
     // 4강 진출자 랜덤 추첨
-    const char* semiFinalist1 = (rand() % 2 == 0) ? names[2] : names[3]; // 영희 vs 민준
+    const char* semiFinalist1 = (rand() % 2 == 0) ? names[2] : names[3]; // 지수 vs 민준
     const char* semiFinalist2 = (rand() % 2 == 0) ? names[4] : names[5]; // 지아 vs 현우
     const char* semiFinalist3 = (rand() % 2 == 0) ? names[6] : names[7]; // 수빈 vs 태양
 
@@ -30,8 +30,8 @@ int main() {
     printf("[ 대진표 ]\n");
     printf("----------------------------------------------------\n");
     printf("  8강\n");
-    printf("  [1] 플레이어   vs   [2] 철수\n");
-    printf("  [3] 영희       vs   [4] 민준\n");
+    printf("  [1] 플레이어   vs   [2] 민규\n");
+    printf("  [3] 지수       vs   [4] 민준\n");
     printf("  [5] 지아       vs   [6] 현우\n");
     printf("  [7] 수빈       vs   [8] 태양\n");
     printf("----------------------------------------------------\n");
@@ -40,7 +40,7 @@ int main() {
 
     // 8강 첫 경기 안내
     printf("====================================================\n");
-    printf("  8강  -  상대 : 철수\n");
+    printf("  8강  -  상대 : 민규\n");
     printf("====================================================\n");
 
     // 8강 입력 처리
@@ -58,7 +58,7 @@ int main() {
         ai = rand() % 3 + 1; // 상대방(AI) 랜덤 결정
         
         printf(" \n 나: %s", rsp[user]);
-        printf("  철수: %s\n", rsp[ai]);
+        printf("  민규: %s\n", rsp[ai]);
 
         if (user == ai) { // 비긴 경우 
             printf("  => 비겼습니다! 재경기!\n\n");
