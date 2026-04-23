@@ -4,7 +4,7 @@
 #define RANGE 50 //숫자의 범위 (0 ~ 49)
 
 int main() {
-    int n, i, number;
+    int n, i, number; //n은 입력받을 수, i는 반복문에서 사용할 변수, number는 사용자로부터 입력받을 숫자
     int frequency[RANGE] = {0}; //숫자의 빈도수를 저장할 배열 초기화
     int arr[MAX_SIZE]; //사용자로부터 입력받을 숫자를 저장할 배열
 
