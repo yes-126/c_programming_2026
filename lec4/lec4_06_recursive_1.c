@@ -3,12 +3,15 @@
 // @param number The input number to calculate the factorial for.
 // @return int The result of factorial.
 
+//함수가 자기 스스로를 호출할 경우 해당 함수를 재귀적이라고 함
+
 int factorial_recursive(int number);
 
 int main() {
     printf("Factorial of 4 is %d.\n", factorial_recursive(4));
     return 0;
 }
+
 int factorial_recursive(int number) {
     if (number <= 1) {
         return 1;
@@ -16,3 +19,4 @@ int factorial_recursive(int number) {
             return number * factorial_recursive(number - 1);
     }
 }
+// 재귀 함수는 종료 조건이 "반드시" 있어야 함
